@@ -74,10 +74,7 @@ locals {
 }
 
 module "autoscale_group" {
-  source = "cloudposse/ec2-autoscale-group/aws"
-  # Cloud Posse recommends pinning every module to a specific version
-  # version = "x.x.x"
-
+  source = "mwaghadhare/ec2-asg"
   namespace   = var.namespace
   stage       = var.stage
   environment = var.environment
