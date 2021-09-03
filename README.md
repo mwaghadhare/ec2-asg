@@ -111,7 +111,7 @@ module "autoscale_group" {
 
   tags = {
     Tier              = "1"
-    KubernetesCluster = "us-west-2.testing.cloudposse.co"
+    KubernetesCluster = "us-west-2.testing"
   }
 
   # Auto-scaling policies and CloudWatch metric alarms
@@ -178,11 +178,6 @@ Available targets:
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.0 |
 
-## Modules
-
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
 
